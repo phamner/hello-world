@@ -1,6 +1,27 @@
-# hello-world
-First GitHub project
+var todos = ['item 1', 'item 2', 'item 3']
+
+//It should have a function to display todos.
+function displayTodos() {
+	console.log('My todos:',  todos);
+}
+
+//It should have a function to add to todos.
+function addTodo(todo){
+	todos.push(todo);
+	displayTodos();
+}
+
+//It should have a function to delete todos.
+function deleteTodo(position) {
+	todos.splice(position, 1);
+	displayTodos();
+}
+
+//It should have a function to change todos.
+function changeTodo (position, newValue){
+	todos[position] = newValue;
+	displayTodos();
+}
 
 
-Hi there, this is my first project on GitHub, a chance to mess around with code and learn something.
 
